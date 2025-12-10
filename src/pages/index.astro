@@ -5,6 +5,9 @@ import Testimonials from "../components/Testimonials.jsx";
 import FAQ from "../components/FAQ.jsx";
 import SmartEstimator from "../components/SmartEstimator.jsx";
 import FeatureSection from "../components/FeatureSection.jsx";
+import ServiceAreaMap from "../components/ServiceAreaMap.jsx";
+import ProcessFlow from "../components/ProcessFlow.jsx";
+import SafetyGuarantee from "../components/SafetyGuarantee.jsx";
 
 const builderFeatures = [
 	{
@@ -119,29 +122,82 @@ const builderFeatures = [
 			author="The Mitchells, Herts"
 			align="right"
 		/>
-	</main>
 
-	<!-- Project Estimator Section -->
-	<div class="py-24 bg-white relative">
-		<div class="mx-auto max-w-7xl px-6 lg:px-8">
-			<div class="mx-auto max-w-2xl text-center mb-16">
-				<h2 class="text-base font-semibold leading-7 text-accent">
-					Smart Project Estimator
-				</h2>
-				<p
-					class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl"
-				>
-					Instantly Check Project Feasibility
-				</p>
-				<p class="mt-4 text-lg text-gray-500">
-					Answer 5 quick questions to get a ball-park timeline and
-					viability check.
-				</p>
+		<!-- Trust Magnet "We Care" Section -->
+		<div class="py-24 bg-stone-50">
+			<div class="mx-auto max-w-7xl px-6 lg:px-8">
+				<div class="mx-auto max-w-2xl text-center">
+					<h2 class="text-base font-semibold leading-7 text-accent">
+						Why Choose Apex
+					</h2>
+					<p
+						class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+					>
+						Building Dreams, Not Just Walls
+					</p>
+					<p class="mt-6 text-lg leading-8 text-gray-600">
+						Building a home is the biggest investment of your life.
+						We don't just stack bricks; we project-manage your dream
+						from blueprint to barbecue. Our team respects your
+						property, keeps the site safe, and delivers a finish
+						that will make your neighbours jealous.
+					</p>
+				</div>
 			</div>
-			<SmartEstimator client:visible />
 		</div>
-	</div>
 
-	<Testimonials client:visible />
-	<FAQ client:visible />
+		<ProcessFlow client:visible />
+
+		<!-- Service Area Map Section -->
+		<div class="py-24 bg-white">
+			<div class="mx-auto max-w-7xl px-6 lg:px-8">
+				<div class="mx-auto max-w-2xl text-center mb-16">
+					<h2 class="text-base font-semibold leading-7 text-accent">
+						Local Coverage
+					</h2>
+					<p
+						class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+					>
+						Serving Hertfordshire & North London
+					</p>
+					<p class="mt-4 text-lg text-gray-500">
+						Top-tier construction projects across St Albans,
+						Harpenden, and beyond.
+					</p>
+				</div>
+				<ServiceAreaMap
+					client:only="react"
+					center={[51.752, -0.3397]}
+					city="St Albans"
+					radiusMiles={20}
+				/>
+			</div>
+		</div>
+
+		<!-- Project Estimator Section -->
+		<div class="py-24 bg-stone-50 relative">
+			<div class="mx-auto max-w-7xl px-6 lg:px-8">
+				<div class="mx-auto max-w-2xl text-center mb-16">
+					<h2 class="text-base font-semibold leading-7 text-accent">
+						Smart Project Estimator
+					</h2>
+					<p
+						class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl"
+					>
+						Instantly Check Project Feasibility
+					</p>
+					<p class="mt-4 text-lg text-gray-500">
+						Answer 5 quick questions to get a ball-park timeline and
+						viability check.
+					</p>
+				</div>
+				<SmartEstimator client:visible />
+			</div>
+		</div>
+
+		<Testimonials client:visible />
+		<SafetyGuarantee client:visible />
+		<FAQ client:visible />
+	</main>
 </Layout>
+```
