@@ -92,21 +92,17 @@ import SmartEstimator from "../components/SmartEstimator.jsx";
 		<div class="relative z-20 bg-white"><TrustBar client:visible /></div>
 
 		<!-- Services Preview Section -->
-		<div class="py-24 sm:py-32 bg-stone-50">
-			<div class="mx-auto max-w-7xl px-6 lg:px-8">
-				<div class="mx-auto max-w-2xl text-center">
-					<h2 class="text-base font-semibold leading-7 text-steel">
-						Structural Mastery
-					</h2>
-					<p
-						class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl"
-					>
-						Uncompromising Quality
-					</p>
-				</div>
-				<!-- Add more content here later -->
-			</div>
-		</div>
+		<FeatureSection
+			client:visible
+			title="Building Your Legacy"
+			subtitle="Structural Excellence"
+			description="A home is more than bricks and mortar. It's where your family's future unfolds. We understand the responsibility of building your dream home, which is why we approach every project with unyielding attention to detail."
+			features={builderFeatures}
+			imageSrc="/hero.png"
+			quote="The team at Apex didn't just build an extension, they transformed how we live as a family."
+			author="The Mitchells, Herts"
+			align="right"
+		/>
 	</main>
 
 	<!-- Project Estimator Section -->
