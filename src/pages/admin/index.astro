@@ -67,21 +67,31 @@ import Layout from "../../layouts/Layout.astro";
 </Layout>
 
 <script>
-    const form = document.getElementById("loginForm");
+    const form = document.getElementById("loginForm") as HTMLFormElement | null;
     const errorMessage = document.getElementById("errorMessage");
 
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const username = e.target.username.value;
-        const password = e.target.password.value;
+    if (form) {
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const target = e.target as HTMLFormElement;
+            const usernameInput = target.elements.namedItem(
+                "username",
+            ) as HTMLInputElement;
+            const passwordInput = target.elements.namedItem(
+                "password",
+            ) as HTMLInputElement;
 
-        if (username === "admin" && password === "password") {
-            localStorage.setItem("isAuthenticated", "true");
-            window.location.href = "/admin/dashboard";
-        } else {
-            errorMessage.classList.remove("hidden");
-        }
-    });
+            const username = usernameInput?.value;
+            const password = passwordInput?.value;
+
+            if (username === "admin" && password === "password") {
+                localStorage.setItem("isAuthenticated", "true");
+                window.location.href = "/admin/dashboard";
+            } else {
+                if (errorMessage) errorMessage.classList.remove("hidden");
+            }
+        });
+    }
 
     // Check if already logged in
     if (localStorage.getItem("isAuthenticated") === "true") {
