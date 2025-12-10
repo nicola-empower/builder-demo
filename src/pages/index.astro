@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import TrustBar from "../components/TrustBar.jsx";
 import Testimonials from "../components/Testimonials.jsx";
 import FAQ from "../components/FAQ.jsx";
+import SmartEstimator from "../components/SmartEstimator.jsx";
 ---
 
 <Layout title="Apex Construction - Master Builders & Renovators">
@@ -106,7 +107,29 @@ import FAQ from "../components/FAQ.jsx";
 				<!-- Add more content here later -->
 			</div>
 		</div>
-		<Testimonials client:visible />
-		<FAQ client:visible />
 	</main>
+
+	<!-- Project Estimator Section -->
+	<div class="py-24 bg-white relative">
+		<div class="mx-auto max-w-7xl px-6 lg:px-8">
+			<div class="mx-auto max-w-2xl text-center mb-16">
+				<h2 class="text-base font-semibold leading-7 text-accent">
+					Smart Project Estimator
+				</h2>
+				<p
+					class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl"
+				>
+					Instantly Check Project Feasibility
+				</p>
+				<p class="mt-4 text-lg text-gray-500">
+					Answer 5 quick questions to get a ball-park timeline and
+					viability check.
+				</p>
+			</div>
+			<SmartEstimator client:visible />
+		</div>
+	</div>
+
+	<Testimonials client:visible />
+	<FAQ client:visible />
 </Layout>
