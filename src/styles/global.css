@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Outfit', sans-serif;
+  --color-primary: #1c1917;
+  /* Stone 900 */
+  --color-secondary: #57534e;
+  /* Stone 600 */
+  --color-accent: #ea580c;
+  /* Orange 600 - Construction/Safety */
+  --color-steel: #475569;
+  /* Slate 600 - Structrural Steel */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-primary antialiased selection:bg-accent/30 selection:text-white;
+  }
+}
