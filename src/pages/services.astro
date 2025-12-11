@@ -1,0 +1,208 @@
+---
+import Layout from "../layouts/Layout.astro";
+import FeatureSection from "../components/FeatureSection.jsx";
+import { Hammer, Home, Building2, Ruler } from "lucide-react";
+---
+
+<Layout title="Our Services | Apex Construction">
+    <main class="bg-white">
+        <!-- Hero -->
+        <div class="bg-gray-900 py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center">
+                    <h2 class="text-base font-semibold leading-7 text-accent">
+                        Our Expertise
+                    </h2>
+                    <p
+                        class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-6xl"
+                    >
+                        Mastery in Every Discipline
+                    </p>
+                    <p class="mt-6 text-lg leading-8 text-gray-300">
+                        From concept to completion, we offer a full suite of
+                        construction services tailored to the most demanding
+                        specifications.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 1: New Builds -->
+        <div class="overflow-hidden bg-white py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div
+                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+                >
+                    <div class="lg:pr-8 lg:pt-4">
+                        <div class="lg:max-w-lg">
+                            <div class="flex items-center gap-x-3">
+                                <div
+                                    class="flex h-10 w-10 items-center justify-center rounded-lg bg-accent"
+                                >
+                                    <Home class="h-6 w-6 text-white" />
+                                </div>
+                                <h2
+                                    class="text-base font-semibold leading-7 text-accent"
+                                >
+                                    Visionary Homes
+                                </h2>
+                            </div>
+                            <p
+                                class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+                            >
+                                Luxury New Builds
+                            </p>
+                            <p class="mt-6 text-lg leading-8 text-gray-600">
+                                We specialize in turning empty plots into
+                                landmark properties. Our new build service is
+                                all-encompassing, ensuring that your vision is
+                                realized with structural precision and aesthetic
+                                flair.
+                            </p>
+                            <ul class="mt-8 space-y-4 text-gray-600">
+                                <li class="flex gap-x-3">
+                                    <span class="text-accent">•</span> Full collaboration
+                                    with architects and structural engineers.
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <span class="text-accent">•</span> Energy-efficient
+                                    designs tailored to modern standards.
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <span class="text-accent">•</span> complete project
+                                    management from foundation to finish.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img
+                        src="/hero.png"
+                        alt="New Build"
+                        class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+                        width="2432"
+                        height="1442"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 2: Extensions -->
+        <div class="overflow-hidden bg-gray-50 py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div
+                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start"
+                >
+                    <div class="lg:order-last lg:pl-10">
+                        <div class="lg:max-w-lg">
+                            <div class="flex items-center gap-x-3">
+                                <div
+                                    class="flex h-10 w-10 items-center justify-center rounded-lg bg-accent"
+                                >
+                                    <Ruler class="h-6 w-6 text-white" />
+                                </div>
+                                <h2
+                                    class="text-base font-semibold leading-7 text-accent"
+                                >
+                                    Space Reimagined
+                                </h2>
+                            </div>
+                            <p
+                                class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+                            >
+                                High-End Extensions
+                            </p>
+                            <p class="mt-6 text-lg leading-8 text-gray-600">
+                                Need more space? We seamlessly integrate
+                                open-plan living areas, kitchen extensions, and
+                                multi-story additions that add significant value
+                                to your property. We ensure the new structure
+                                blends perfectly with the existing character.
+                            </p>
+                            <ul class="mt-8 space-y-4 text-gray-600">
+                                <li class="flex gap-x-3">
+                                    <span class="text-accent">•</span> Single and
+                                    double-storey extensions.
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <span class="text-accent">•</span> Open-plan kitchen
+                                    and living conversions.
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <span class="text-accent">•</span> Loft and basement
+                                    conversions.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex items-start justify-end lg:order-first">
+                        <img
+                            src="/hero.png"
+                            alt="Extension"
+                            class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                            width="2432"
+                            height="1442"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 3: Commercial -->
+        <div class="overflow-hidden bg-white py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div
+                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+                >
+                    <div class="lg:pr-8 lg:pt-4">
+                        <div class="lg:max-w-lg">
+                            <div class="flex items-center gap-x-3">
+                                <div
+                                    class="flex h-10 w-10 items-center justify-center rounded-lg bg-accent"
+                                >
+                                    <Building2 class="h-6 w-6 text-white" />
+                                </div>
+                                <h2
+                                    class="text-base font-semibold leading-7 text-accent"
+                                >
+                                    Business Growth
+                                </h2>
+                            </div>
+                            <p
+                                class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+                            >
+                                Commercial Restructuring
+                            </p>
+                            <p class="mt-6 text-lg leading-8 text-gray-600">
+                                Office fit-outs and structural alterations
+                                designed to maximize your business potential
+                                with minimal downtime. We understand the
+                                commercial reality of construction.
+                            </p>
+                            <ul class="mt-8 space-y-4 text-gray-600">
+                                <li class="flex gap-x-3">
+                                    <span class="text-accent">•</span> Office fit-outs
+                                    and internal reconfiguration.
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <span class="text-accent">•</span> Structural
+                                    strengthening and steelwork.
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <span class="text-accent">•</span> Change of use
+                                    conversions.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img
+                        src="/hero.png"
+                        alt="Commercial"
+                        class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+                        width="2432"
+                        height="1442"
+                    />
+                </div>
+            </div>
+        </div>
+    </main>
+</Layout>

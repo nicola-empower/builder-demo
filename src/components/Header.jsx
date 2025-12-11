@@ -25,8 +25,10 @@ const Header = ({ title = "Trade Services", phone = "0123 456 7890" }) => {
                 {/* Desktop Call Button */}
                 <div className="hidden md:flex items-center gap-6">
                     <nav className={`text-sm font-medium ${isScrolled ? 'text-gray-600' : 'text-gray-200'} flex gap-6`}>
-                        <a href="#services" className="hover:text-accent transition-colors">Services</a>
-                        <a href="#reviews" className="hover:text-accent transition-colors">Reviews</a>
+                        <a href="/" className="hover:text-accent transition-colors">Home</a>
+                        <a href="/services" className="hover:text-accent transition-colors">Services</a>
+                        <a href="/portfolio" className="hover:text-accent transition-colors">Portfolio</a>
+                        <a href="/contact" className="hover:text-accent transition-colors">Contact</a>
                     </nav>
                     <a
                         href={`tel:${phone.replace(/\s/g, '')}`}
