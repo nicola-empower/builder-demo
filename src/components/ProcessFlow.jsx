@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone, ClipboardCheck, Wrench, ThumbsUp } from 'lucide-react';
 
-const steps = [
+const defaultSteps = [
     {
         title: 'Consultation',
         desc: 'We discuss your needs and assess the work required.',
@@ -24,14 +24,14 @@ const steps = [
     },
 ];
 
-const ProcessFlow = () => {
+const ProcessFlow = ({ steps = defaultSteps, title = "Our Process", subtitle = "Simple, Stress-Free Service" }) => {
     return (
         <div className="py-24 bg-white">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl text-center mb-16">
-                    <h2 className="text-base font-semibold leading-7 text-accent">Our Process</h2>
+                    <h2 className="text-base font-semibold leading-7 text-accent">{title}</h2>
                     <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        Simple, Stress-Free Service
+                        {subtitle}
                     </p>
                 </div>
 
@@ -40,7 +40,8 @@ const ProcessFlow = () => {
                         <div key={step.title} class="relative">
                             <div class="flex flex-col items-center text-center">
                                 <div class="flex h-16 w-16 items-center justify-center rounded-full bg-accent text-white shadow-lg mb-6">
-                                    <step.icon size={32} />
+                                    {step.icon && <step.icon size={32} />}
+                                    {!step.icon && <span className="text-xl font-bold">{stepIdx + 1}</span>}
                                 </div>
                                 <h3 class="text-lg font-bold leading-8 text-gray-900">{step.title}</h3>
                                 <p class="mt-2 text-base leading-7 text-gray-500">{step.desc}</p>

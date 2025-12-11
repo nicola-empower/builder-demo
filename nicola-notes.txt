@@ -101,7 +101,39 @@ Whether you have planning permission approved or are just exploring the possibil
 **Button:** [ Book a Site Consultation ]
 
 ---
+New Section 1: The Featured Project Spotlight
+Place this after the "Services" section. This is visually heavy. It tells the user: "We do big, complex jobs."
 
+Headline: Project Spotlight: The Harborne Renovation
+
+Sub-headline: A complete structural reconfiguration and double-story extension for a 1920s heritage property.
+
+The Details (3 column layout or bullet points):
+
+The Brief: Create an open-plan family living space while preserving the property's period character.
+
+The Challenge: Complex steelwork requirements and tight planning restrictions.
+
+The Result: A seamless blend of contemporary glass and traditional brickwork, delivered 2 weeks ahead of schedule.
+
+Button: [ View Full Case Study ]
+
+(Why this sells your web services: It shows the tradesperson that they can upload photos and "brag" about their work easily. It makes them look like an established firm with a portfolio.)
+
+New Section 2: The "Apex Standard" (Risk Reversal)
+Place this right before the Testimonials. High-end clients are terrified of "cowboy builders." This section kills that fear.
+
+Headline: Our Guarantee: Built on Integrity
+
+Body: We don't cut corners. Every Apex project is backed by our rock-solid workmanship guarantee and full insurance coverage.
+
+The 3 Pillars (Icons):
+
+Fully Insured: £10m Public Liability and Employers' Liability cover for total peace of mind.
+
+JCT Contracts: We use industry-standard contracts so everyone knows exactly where they stand regarding costs and timelines.
+
+10-Year Warranty: All structural works are covered for a decade, giving you security long after we’ve left the site.
 ### **Reminder for Later:**
 As requested, I am making a note that we still need to fill out the following pages for **Apex Construction** to make the demo complete:
 1.  **Portfolio / Gallery** (Crucial for builders).
