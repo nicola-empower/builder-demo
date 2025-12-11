@@ -9,18 +9,30 @@ import ServiceAreaMap from "../components/ServiceAreaMap.jsx";
 import ProcessFlow from "../components/ProcessFlow.jsx";
 import SafetyGuarantee from "../components/SafetyGuarantee.jsx";
 
+import {
+	HardHat,
+	FileText,
+	Award,
+	Home,
+	Maximize2,
+	Building2,
+} from "lucide-react";
+
 const builderFeatures = [
 	{
 		title: "Architectural Precision",
 		desc: "We work directly with your architect to ensure structural integrity matches the vision.",
+		icon: HardHat,
 	},
 	{
 		title: "Project Management",
 		desc: "Dedicated site manager for every build, keeping your project on time and budget.",
+		icon: FileText,
 	},
 	{
 		title: "Master Warranty",
 		desc: "10-year structural warranty on all new builds and extensions.",
+		icon: Award,
 	},
 ];
 ---
@@ -108,19 +120,19 @@ const builderFeatures = [
 					{
 						title: "End-to-End Mgmt",
 						subtitle: "We handle logistics",
-						icon: null,
+						icon: FileText,
 						colorClass: "text-blue-500",
 					},
 					{
 						title: "Fixed-Price",
 						subtitle: "Transparent Billing",
-						icon: null,
+						icon: Award,
 						colorClass: "text-green-500",
 					},
 					{
 						title: "Master Builders",
 						subtitle: "Fully Accredited",
-						icon: null,
+						icon: HardHat,
 						colorClass: "text-yellow-500",
 					},
 				]}
@@ -137,14 +149,17 @@ const builderFeatures = [
 				{
 					title: "Luxury New Builds",
 					desc: "We turn empty plots into landmark properties. Working alongside the region's top architects.",
+					icon: Home,
 				},
 				{
 					title: "High-End Extensions",
 					desc: "Seamlessly integrate open-plan living areas and multi-story additions.",
+					icon: Maximize2,
 				},
 				{
 					title: "Commercial Restructuring",
 					desc: "Office fit-outs and structural alterations designed to maximize potential.",
+					icon: Building2,
 				},
 			]}
 			imageSrc="/hero.png"
